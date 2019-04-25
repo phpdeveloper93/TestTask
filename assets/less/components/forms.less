@@ -1,0 +1,42 @@
+//Sign up form
+
+.signup-form {
+	position: relative;
+}
+.frm-control {    
+	height: 60px;
+    width: 100%;
+    border-radius: 27px;
+    padding: 0 35% 0 40px;
+    border: none;
+    font-size: 1.286em;    
+    color: @font;    
+    &:focus, &:hover {
+        outline: none;
+    }
+    &::placeholder {        
+        font-size: 1em;        
+        color: @font;
+    }
+}
+.btn-submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+	height: 60px;
+    width: 33%;
+    background: @accent;
+    border: none;
+    border-top-right-radius: 27px;
+    border-bottom-right-radius: 27px; 
+    font-size: 1.286em; //18px
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    &:hover {
+        background: @accent-bg;
+        cursor: pointer;
+        color: #000;
+        .transition();
+    }
+}

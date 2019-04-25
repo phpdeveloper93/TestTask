@@ -1,0 +1,27 @@
+//Buttons
+//ghost-button
+.btn-ghost(@c:#fff, @c-hover: #000, @bg-hover: @accent, @font:12px){
+    display: block;
+    padding: 0.917em 0;//11px 32px    
+    height: 36px;
+    width: 120px;
+    font-size: @font;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 0.6;
+    letter-spacing: -0.25px;
+    color: @c;
+    border: 2px solid @accent;
+    border-radius: 16px;
+    text-decoration: none;
+    &:hover {
+        .transition();
+        background: @bg-hover;
+        color: @c-hover;
+        border: 2px solid transparent;
+    }
+}
+.btn-ghost-yellow {
+    .btn-ghost();
+}
